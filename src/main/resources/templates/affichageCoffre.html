@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Mon Coffre</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Contenu de mon coffre : </h1>
+<h2 th:utext="${monCoffre.id}">..!..</h2>
+<h2 th:utext="${monCoffre.valeur}">..!..</h2>
+
+<!--
+
+   In Thymeleaf the equivalent of
+   JSP's ${pageContext.request.contextPath}/edit.html
+   would be @{/edit.html}
+
+   -->
+
+<a th:href="@{/secondPage}">Second Page</a>
+
+</body>
+
+</html>
